@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
-// https://vitejs.dev/config/
-export default defineConfig({
+const config = defineConfig({
   plugins: [react()],
   css: {
     preprocessorOptions: {
@@ -22,4 +22,18 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: [
+      { find: "~", replacement: resolve(__dirname, "src") },
+      { find: "~test", replacement: resolve(__dirname, "test") },
+    ],
+  },
 });
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(config as any).test = {
+  environment: "jsdom",
+  globals: true,
+  setupFiles: "./vitest.setup.js",
+};
+
+export default config;
