@@ -1,12 +1,4 @@
-import {
-  Rating,
-  Stack,
-  Table,
-  Title,
-  TextInput,
-  Text,
-  Group,
-} from "@mantine/core";
+import { Rating, Stack, Table, TextInput, Text, Group } from "@mantine/core";
 import { useMemo, useState } from "react";
 import { Icon } from "~/components/Icon";
 import { PrintOnly } from "~/components/PrintOnly";
@@ -46,7 +38,7 @@ export function RT1Skills(props: RT1SkillsProps) {
         {displaySkills.map((skill) => (
           <Table.Tr>
             <Table.Td w="20%">
-              <Title order={4}>{skill.name}</Title>
+              <Text fw="bold">{skill.name}</Text>
             </Table.Td>
             <Table.Td>
               <Group>

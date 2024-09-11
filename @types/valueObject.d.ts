@@ -16,3 +16,4 @@ type SimpleDuration = {
   start?: SimpleDate;
   end?: SimpleDate;
 };
+type SocialMedia = "linkedin" | "github" | "telegram";

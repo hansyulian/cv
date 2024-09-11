@@ -19,7 +19,7 @@ type ResumeProfile = {
 };
 
 type ResumeSocialMedia = {
-  type: "linkedin" | "github" | "telegram";
+  type: SocialMedia;
   url: string;
 };
 
