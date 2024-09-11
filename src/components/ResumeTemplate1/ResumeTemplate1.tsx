@@ -4,6 +4,7 @@ import { RT1Experiences } from "~/components/ResumeTemplate1/ResumeTemplate1.Exp
 import { RT1Languages } from "~/components/ResumeTemplate1/ResumeTemplate1.Languages";
 import { RT1Profile } from "~/components/ResumeTemplate1/ResumeTemplate1.Profile";
 import { RT1Section } from "~/components/ResumeTemplate1/ResumeTemplate1.Section";
+import { RT1Skills } from "~/components/ResumeTemplate1/ResumeTemplate1.Skills";
 
 export type ResumeTemplate1Props = {
   data: Resume;
@@ -30,6 +31,11 @@ export function ResumeTemplate1(props: ResumeTemplate1Props) {
       {data.languages && data.languages.length > 0 && (
         <RT1Section title="Languages">
           <RT1Languages languages={data.languages} />
+        </RT1Section>
+      )}
+      {data.skills && data.skills.length > 0 && (
+        <RT1Section title="Skills">
+          <RT1Skills skills={data.skills} />
         </RT1Section>
       )}
     </Stack>

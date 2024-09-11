@@ -1,4 +1,4 @@
-import { Text, Rating, Stack, Table, Title } from "@mantine/core";
+import { Text, Rating, Stack, Table, Title, Group } from "@mantine/core";
 
 export type RT1LanguagesProps = {
   languages: ResumeLanguage[];
@@ -27,17 +27,17 @@ export function RT1Languages(props: RT1LanguagesProps) {
       <Table>
         {languages.map((language) => (
           <Table.Tr>
-            <Table.Td>
+            <Table.Td w="20%">
               <Title order={4}>{language.language}</Title>
             </Table.Td>
             <Table.Td>
-              <Rating
-                readOnly
-                value={proficiencySequence.indexOf(language.proficiency) + 1}
-              />
-            </Table.Td>
-            <Table.Td w="100%">
-              <Text>{proficiencyLabelMap[language.proficiency]}</Text>
+              <Group>
+                <Rating
+                  readOnly
+                  value={proficiencySequence.indexOf(language.proficiency) + 1}
+                />
+                <Text>{proficiencyLabelMap[language.proficiency]}</Text>
+              </Group>
             </Table.Td>
           </Table.Tr>
         ))}
