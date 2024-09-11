@@ -4,6 +4,7 @@ export const data: Resume = {
     phone: "+628112312107",
     email: "hansyulian@windowslive.com",
     address: "Bandung, West Java, Indonesia",
+    title: "Senior Software Engineer",
     summary:
       "Accomplished and versatile software engineer with extensive experience across a diverse array of technologies. Expert in developing robust solutions and adept at navigating complex technical landscapes. A proven track record of delivering high-quality software products efficiently and effectively.",
   },
