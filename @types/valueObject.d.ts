@@ -5,3 +5,8 @@ type SimpleDate = {
   year: number;
   month?: MonthNumber;
 };
+
+type SimpleDuration = {
+  start?: SimpleDate;
+  end?: SimpleDate;
+};

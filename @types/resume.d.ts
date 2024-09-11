@@ -35,17 +35,16 @@ type ResumeReference = {
   phone?: string;
 };
 
-type ResumeExperience = {
+type ResumeExperience = SimpleDuration & {
   title: string;
   company: string;
   location: string;
   remote?: boolean;
-  start: SimpleDate;
-  end?: SimpleDate;
   description?: string[];
   achievements?: string[];
   technologies?: string[];
   projects?: ResumeExperienceProject[];
+  start: SimpleDate;
 };
 
 type ResumeExperienceProject = {
@@ -56,13 +55,14 @@ type ResumeExperienceProject = {
   end?: SimpleDate;
 };
 
-type ResumeEducation = {
+type ResumeEducation = SimpleDuration & {
   institution: string;
   location: string;
-  graduationDate?: SimpleDate;
-  startDate?: SimpleDate;
+  end?: SimpleDate;
+  start?: SimpleDate;
   degree: string;
   verdict: string;
+  description?: string[];
 };
 
 type ResumeSkill = {
@@ -71,7 +71,4 @@ type ResumeSkill = {
   periods?: ResumeSkillPeriod[];
 };
 
-type ResumeSkillPeriod = {
-  start: SimpleDate;
-  end?: SimpleDate;
-};
+type ResumeSkillPeriod = SimpleDuration;

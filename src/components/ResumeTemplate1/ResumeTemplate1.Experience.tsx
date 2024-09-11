@@ -1,13 +1,4 @@
-import {
-  Anchor,
-  Divider,
-  Grid,
-  Group,
-  List,
-  Stack,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Anchor, Grid, Group, List, Stack, Text, Title } from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
@@ -24,7 +15,7 @@ export function RT1Experience(props: RT1ExperienceProps) {
           <Title order={5}>{experience.company}</Title>
           <Group gap="xs">
             <Icon name="location" size={16} />
-            <Text c="gray">
+            <Text c="gray" flex={1}>
               {experience.location} {experience.remote ? "(Remote)" : ""}
             </Text>
           </Group>
