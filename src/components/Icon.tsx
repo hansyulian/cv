@@ -5,6 +5,8 @@ import {
   IconBrandTelegram,
   IconBrandLinkedin,
   IconBrandGithub,
+  IconMinus,
+  IconPlus,
 } from "@tabler/icons-react";
 
 const iconMap = {
@@ -14,6 +16,8 @@ const iconMap = {
   linkedin: IconBrandLinkedin,
   telegram: IconBrandTelegram,
   github: IconBrandGithub,
+  plus: IconPlus,
+  minus: IconMinus,
 };
 
 export type IconNames = keyof typeof iconMap;
