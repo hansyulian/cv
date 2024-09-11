@@ -6,6 +6,9 @@ const config = defineConfig({
   plugins: [react()],
   css: {
     preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/_mantine";`,
+      },
       postcss: {
         plugins: {
           "postcss-preset-mantine": {},

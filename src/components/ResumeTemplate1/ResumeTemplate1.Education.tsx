@@ -1,5 +1,6 @@
-import { Anchor, Grid, Group, List, Stack, Text, Title } from "@mantine/core";
+import { Grid, Group, List, Stack, Text, Title } from "@mantine/core";
 import { Icon } from "~/components/Icon";
+import { TimelineGraph } from "~/components/TimelineGraph";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
 export type RT1EducationProps = {
@@ -25,7 +26,7 @@ export function RT1Education(props: RT1EducationProps) {
         </Stack>
       </Grid.Col>
       <Grid.Col span={{ sm: 1 }}>
-        <Stack justify="center" h="100%" align="center"></Stack>
+        <TimelineGraph />
       </Grid.Col>
       <Grid.Col span={{ sm: 8 }}>
         <Stack>
