@@ -50,7 +50,7 @@ type ResumeExperience = {
 
 type ResumeExperienceProject = {
   name: string;
-  url?: string[];
+  urls?: string[];
   description?: string;
   start?: SimpleDate;
   end?: SimpleDate;

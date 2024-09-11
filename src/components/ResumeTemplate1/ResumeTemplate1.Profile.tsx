@@ -11,7 +11,7 @@ export function RT1Profile(props: RT1ProfileProps) {
   const { profile, photoUrl } = props;
 
   return (
-    <Grid>
+    <Grid gutter="xl">
       <Grid.Col span={{ sm: 8 }}>
         <Stack h="100%" justify="center">
           <Group>
@@ -21,7 +21,7 @@ export function RT1Profile(props: RT1ProfileProps) {
               {profile.title && <Text fz="lg">{profile.title}</Text>}
             </Stack>
           </Group>
-          {profile.summary && <Text>{profile.summary}</Text>}
+          {profile.summary && <Text ta="justify">{profile.summary}</Text>}
         </Stack>
       </Grid.Col>
       <Grid.Col span={{ sm: 4 }}>
@@ -38,7 +38,7 @@ export function RT1Profile(props: RT1ProfileProps) {
           />
 
           <RT1ProfileInfoRow
-            icon={<Icon name="phone" />}
+            icon={<Icon name="whatsapp" />}
             withDivider
             value={profile.phone}
           />

@@ -1,5 +1,4 @@
 import {
-  IconLocation,
   IconPhone,
   IconMail,
   IconBrandTelegram,
@@ -7,10 +6,16 @@ import {
   IconBrandGithub,
   IconMinus,
   IconPlus,
+  IconBriefcase,
+  IconProps as BaseIconProps,
+  IconMapPin,
+  IconCircle,
+  IconBrandWhatsapp,
+  IconCode,
 } from "@tabler/icons-react";
 
 const iconMap = {
-  location: IconLocation,
+  location: IconMapPin,
   phone: IconPhone,
   email: IconMail,
   linkedin: IconBrandLinkedin,
@@ -18,13 +23,18 @@ const iconMap = {
   github: IconBrandGithub,
   plus: IconPlus,
   minus: IconMinus,
+  company: IconBriefcase,
+  circle: IconCircle,
+  whatsapp: IconBrandWhatsapp,
+  project: IconBriefcase,
+  code: IconCode,
 };
 
 export type IconNames = keyof typeof iconMap;
 
 export type IconProps = {
   name: IconNames;
-};
+} & BaseIconProps;
 
 export const Icon = (props: IconProps) => {
   const { name, ...rest } = props;

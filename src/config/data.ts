@@ -51,18 +51,18 @@ export const data: Resume = {
       projects: [
         {
           name: "Bake iOS & Android Mobile App",
-          url: [
+          urls: [
             "https://play.google.com/store/apps/details?id=com.cakedefi.app",
             "https://apps.apple.com/me/app/bake-formerly-cake-defi/id1564415526",
           ],
         },
         {
           name: "Bake Website",
-          url: ["https://bake.io"],
+          urls: ["https://bake.io"],
         },
         {
           name: "Bake WebApp",
-          url: ["https://app.bake.io"],
+          urls: ["https://app.bake.io"],
         },
       ],
       description: [
@@ -102,16 +102,16 @@ export const data: Resume = {
       projects: [
         {
           name: "Sparrow Exchange Backend",
-          url: ["https://www.sparrowexchange.com/"],
+          urls: ["https://www.sparrowexchange.com/"],
         },
         {
           name: "Cakepool",
           description: "The initial version of Cake",
-          url: ["https://bake.io"],
+          urls: ["https://bake.io"],
         },
         {
           name: "Bahamas Central Bank Digital Currency",
-          url: ["https://www.sanddollar.bs/"],
+          urls: ["https://www.sanddollar.bs/"],
         },
       ],
       technologies: [
@@ -147,7 +147,7 @@ export const data: Resume = {
       projects: [
         {
           name: "Equis Marketing Portal",
-          url: ["https://deltahorses.nl/en/"],
+          urls: ["https://deltahorses.nl/en/"],
         },
         {
           name: "Equis Mobile App",
@@ -235,7 +235,7 @@ export const data: Resume = {
         month: 3,
       },
       projects: [
-        { name: "Malaysia Open Data Platform", url: ["https://data.gov.my/"] },
+        { name: "Malaysia Open Data Platform", urls: ["https://data.gov.my/"] },
       ],
       description: [
         "Work closely with senior consultant and senior solution architect",
