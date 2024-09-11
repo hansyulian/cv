@@ -544,11 +544,11 @@ export const data: Resume = {
   languages: [
     {
       language: "Indonesian",
-      level: "native",
+      proficiency: "native",
     },
     {
       language: "English",
-      level: "professional",
+      proficiency: "professional",
     },
   ],
   references: [

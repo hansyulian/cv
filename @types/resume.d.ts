@@ -25,7 +25,7 @@ type ResumeSocialMedia = {
 
 type ResumeLanguage = {
   language: string;
-  level: "native" | "professional" | "limited" | "elementary" | "basic";
+  proficiency: LanguageProficiency;
 };
 
 type ResumeReference = {
