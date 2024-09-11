@@ -37,4 +37,13 @@ describe("getLinkableValue", () => {
       "http://example.com:8080"
     );
   });
+  it("should handle email", () => {
+    expect(getLinkableValue("hansyulian@windowslive.com")).toBe(
+      "mailto:hansyulian@windowslive.com"
+    );
+    expect(getLinkableValue("hansyulian+1@windowslive.com")).toBe(
+      "mailto:hansyulian+1@windowslive.com"
+    );
+    expect(getLinkableValue("hansyulian @windowslive.com")).toBeUndefined();
+  });
 });

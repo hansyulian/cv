@@ -567,15 +567,20 @@ export const data: Resume = {
     {
       institution: "Institut Teknologi Harapan Bangsa",
       location: "Indonesia",
+      start: {
+        year: 2012,
+        month: 8,
+      },
       end: {
         year: 2015,
         month: 5,
       },
-      degree: "Bachelor of science",
+      degree: "Bachelor of Science",
       verdict: "GPA 3.96/4.00",
       description: [
         "Best graduate of ITHB 2015",
         "Fastest graduate of: 3 years accelerated program",
+        "Received 5 semester of scholarships for academic performance",
       ],
     },
   ],

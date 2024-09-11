@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--mantine-color-gray-2);
+  margin: calc(-1 * var(--mantine-spacing-xl));
+  padding: var(--mantine-spacing-xl);
+  margin-bottom: 0;
+  @include print-only {
+    padding-top: calc(2 * var(--mantine-spacing-xl));
+  }
+}

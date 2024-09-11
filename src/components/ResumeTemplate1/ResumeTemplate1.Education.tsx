@@ -36,7 +36,7 @@ export function RT1Education(props: RT1EducationProps) {
             </Text>
             <List withPadding>
               <List.Item>
-                <Text>Score: {education.verdict}</Text>
+                <Text fw="bold">Score: {education.verdict}</Text>
               </List.Item>
               {education.description &&
                 education.description.map((d) => (

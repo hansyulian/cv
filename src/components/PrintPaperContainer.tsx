@@ -1,6 +1,7 @@
-import { Container, Paper } from "@mantine/core";
+import { Box, Container, Paper, Space } from "@mantine/core";
 import { PropsWithChildren } from "react";
 import { useIsPrinting } from "~/hooks/useIsPrinting";
+import classes from "./PrintPaperContainer.module.scss";
 
 export function PrintPaperContainer(props: PropsWithChildren) {
   const isPrinting = useIsPrinting();
@@ -8,10 +9,14 @@ export function PrintPaperContainer(props: PropsWithChildren) {
     return <Container size="xl">{props.children}</Container>;
   }
   return (
-    <Container size="xl">
-      <Paper p="xl" shadow="xl">
-        {props.children}
-      </Paper>
-    </Container>
+    <Box className={classes.outerContainer}>
+      <Container size="xl">
+        <Space h="xl" />
+        <Paper p="xl" shadow="xl">
+          {props.children}
+        </Paper>
+        <Space h="xl" />
+      </Container>
+    </Box>
   );
 }
