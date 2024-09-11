@@ -1,8 +1,8 @@
-import { describe, test, expect } from "vitest";
+import { describe, it, expect } from "vitest";
 import { simpleDurationSortCompareFn } from "~/utils/simpleDurationSortCompareFn";
 
 describe("simpleDurationSortCompareFn", () => {
-  test("should prioritize experiences without an end date over ones with an end date", () => {
+  it("should prioritize experiences without an end date over ones with an end date", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2022, month: 1 },
     };
@@ -17,7 +17,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(-1);
   });
 
-  test("should put experiences with an end date over ones without an end date", () => {
+  it("should put experiences with an end date over ones without an end date", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2021, month: 1 },
       end: { year: 2023, month: 5 },
@@ -32,7 +32,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(1);
   });
 
-  test("should sort by end date if both experiences have end dates", () => {
+  it("should sort by end date if both experiences have end dates", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2021, month: 2 },
       end: { year: 2023, month: 4 },
@@ -48,7 +48,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(-1);
   });
 
-  test("should sort by start date if end dates are the same", () => {
+  it("should sort by start date if end dates are the same", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2021, month: 3 },
       end: { year: 2023, month: 5 },
@@ -64,7 +64,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(-1);
   });
 
-  test("should return 0 if both start and end dates are the same", () => {
+  it("should return 0 if both start and end dates are the same", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2020, month: 1 },
       end: { year: 2023, month: 5 },
@@ -80,7 +80,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(0);
   });
 
-  test("should handle missing start dates for both experiences", () => {
+  it("should handle missing start dates for both experiences", () => {
     const experienceA: SimpleDuration = {
       end: { year: 2023, month: 5 },
     };
@@ -94,7 +94,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(0);
   });
 
-  test("should handle one experience with missing start date and the other with missing end date", () => {
+  it("should handle one experience with missing start date and the other with missing end date", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2021, month: 1 },
     };
@@ -108,7 +108,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(-1);
   });
 
-  test("should sort by end date when both experiences have the same start date", () => {
+  it("should sort by end date when both experiences have the same start date", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2021, month: 2 },
       end: { year: 2023, month: 4 },
@@ -124,7 +124,7 @@ describe("simpleDurationSortCompareFn", () => {
     expect(result).toBe(-1);
   });
 
-  test("should sort by start date when both experiences have the same end date", () => {
+  it("should sort by start date when both experiences have the same end date", () => {
     const experienceA: SimpleDuration = {
       start: { year: 2022, month: 3 },
       end: { year: 2023, month: 5 },

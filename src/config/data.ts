@@ -341,7 +341,7 @@ export const data: Resume = {
     },
     {
       name: "Neo4j",
-      level: 4,
+      level: 3,
       periods: [
         {
           start: {
@@ -426,14 +426,28 @@ export const data: Resume = {
     },
     {
       name: "C++",
-      level: 5,
+      level: 4,
+      periods: [
+        {
+          start: {
+            year: 2010,
+          },
+          end: {
+            year: 2013,
+          },
+        },
+      ],
+    },
+    {
+      name: "Pascal",
+      level: 3,
       periods: [
         {
           start: {
             year: 2008,
           },
           end: {
-            year: 2013,
+            year: 2010,
           },
         },
       ],
@@ -556,11 +570,14 @@ export const data: Resume = {
       name: "U-Zyn Chua",
       designation:
         "CTO of Cake Group Pte. Ltd & Principal Consultant of Zynesis Pte. Ltd.",
+      email: "uzyn@zynesis.com",
+      phone: "+6598318407",
     },
     {
       name: "Gan Chun How",
       designation:
         "Senior Solution Architect of Fusionex International Sdn. Bhd.",
+      phone: "+60123211867",
     },
   ],
   educations: [
@@ -583,5 +600,22 @@ export const data: Resume = {
         "Received 5 semester of scholarships for academic performance",
       ],
     },
+  ],
+  notableAccomplishments: [
+    "Achieved a TOEFL iBT score of 97 in February 2018.",
+    "Achieved a TOEFL PBT score of 583 in April 2015.",
+    "Engaged in competitive programming practice during high school: http://uhunt.felix-halim.net/id/78903.",
+    "Awarded 1st Consolation Winner at the Kompetisi Pemrograman UGM 2011, an informatics competition for high school students.",
+    "Awarded 1st Place in the ITB Akravidia Programming Contest 2011, an informatics competition for high school students.",
+    "Awarded 2nd Place in the ITHB IECCC 2010, an informatics competition for high school students.",
+    "Awarded 3rd Place in the ITHB IECCC 2009, an informatics competition for high school students.",
+    "Awarded 2nd Place in the Kompetisi Pengetahuan Umum SMA Santo Aloysius 2008, a general knowledge competition for middle school students.",
+    "Awarded 3rd Place in the Kompetisi Matematika UPI 2007, a mathematics competition for middle school students.",
+    "Instructor for iOS programming training (March 2015), an event organized by ITHB to introduce programming basics to high school students at SMA Santa Angela Bandung.",
+    "Chairman of the Academic and Profession Division in the Informatics Engineering Community, a student council body at ITHB for the 2014-2015 term.",
+    "Instructor for iOS programming training (February 2014), part of an ITHB event to introduce programming basics to high school students at SMA Santa Angela Bandung.",
+    "Chairman of the Windows Phone Workshop at ITHB (December 2013), an event organized by the Informatics Engineering Community to provide an overview of Windows Phone programming. The event was attended by around 30 students and 5 lecturers from ITHB’s Wireless Mobile Computing course.",
+    "Chairman of the PhoneGap Workshop at ITHB (December 2013), an event that introduced cross-platform mobile programming frameworks, attended by around 40 ITHB students.",
+    "Instructor at the Bandung Informatics Olympiad (April 2013), an event organized by MGMP TIK to prepare high school students for the city-level National Science Olympiad. The event included around 50 participants from various schools in Bandung, focusing on informatics training.",
   ],
 };

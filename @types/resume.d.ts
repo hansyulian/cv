@@ -6,7 +6,7 @@ type Resume = {
   languages?: ResumeLanguage[];
   educations?: ResumeEducation[];
   skills?: ResumeSkill[];
-  extra?: string[];
+  notableAccomplishments?: string[];
 };
 
 type ResumeProfile = {

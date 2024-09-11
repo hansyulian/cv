@@ -2,6 +2,7 @@ import { Stack } from "@mantine/core";
 import { RT1Educations } from "~/components/ResumeTemplate1/ResumeTemplate1.Educations";
 import { RT1Experiences } from "~/components/ResumeTemplate1/ResumeTemplate1.Experiences";
 import { RT1Languages } from "~/components/ResumeTemplate1/ResumeTemplate1.Languages";
+import { RT1NotableAccomplishments } from "~/components/ResumeTemplate1/ResumeTemplate1.NotableAccomplishments";
 import { RT1Profile } from "~/components/ResumeTemplate1/ResumeTemplate1.Profile";
 import { RT1Section } from "~/components/ResumeTemplate1/ResumeTemplate1.Section";
 import { RT1Skills } from "~/components/ResumeTemplate1/ResumeTemplate1.Skills";
@@ -44,6 +45,14 @@ export function ResumeTemplate1(props: ResumeTemplate1Props) {
           <RT1SocialMedias socialMedias={data.socialMedia} />
         </RT1Section>
       )}
+      {data.notableAccomplishments &&
+        data.notableAccomplishments.length > 0 && (
+          <RT1Section title="Notable Accomplishments">
+            <RT1NotableAccomplishments
+              notableAccomplishments={data.notableAccomplishments}
+            />
+          </RT1Section>
+        )}
     </Stack>
   );
 }
