@@ -10,15 +10,15 @@ export function AutoLinkText(props: AutoLinkTextProps) {
 
   return (
     <Text {...rest}>
-      {children
-        .split(" ")
-        .map((value) =>
-          isValidUrl(value) ? (
-            <Anchor href={value}>{value} </Anchor>
-          ) : (
-            `${value} `
-          )
-        )}
+      {children.split(" ").map((value) =>
+        isValidUrl(value) ? (
+          <Anchor href={value} {...rest}>
+            {value}{" "}
+          </Anchor>
+        ) : (
+          `${value} `
+        )
+      )}
     </Text>
   );
 }

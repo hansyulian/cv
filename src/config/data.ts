@@ -7,6 +7,8 @@ export const data: Resume = {
     title: "Senior Software Engineer",
     summary:
       "Accomplished and versatile software engineer with extensive experience across a diverse array of technologies. Expert in developing robust solutions and adept at navigating complex technical landscapes. A proven track record of delivering high-quality software products efficiently and effectively.",
+    printOnlyHeading:
+      "This CV is built using React as a part of skill demonstration of Hans Yulian. The online version of this CV is available in https://github.com/hansyulian/cv and repository url is https://github.com/hansyulian/cv",
   },
   experiences: [
     {
