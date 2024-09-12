@@ -16,7 +16,13 @@ export function RT1ProfileInfoRow(props: RT1ProfileInfoRowProps) {
     <Stack gap="xs">
       <Group>
         {icon}
-        {linkUrl ? <Anchor href={linkUrl}>{text}</Anchor> : <Text>{text}</Text>}
+        {linkUrl ? (
+          <Anchor target="_blank" href={linkUrl}>
+            {text}
+          </Anchor>
+        ) : (
+          <Text>{text}</Text>
+        )}
       </Group>
       {withDivider && <Divider />}
     </Stack>

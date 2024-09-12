@@ -18,7 +18,7 @@ export function RT1OnlineLink(props: RT1OnlineLinkProps) {
               {onlineLinkLabelMap[type]}
             </Text>
 
-            <Anchor href={url}>
+            <Anchor target="_blank" href={url}>
               <Text>{url}</Text>
             </Anchor>
           </Stack>

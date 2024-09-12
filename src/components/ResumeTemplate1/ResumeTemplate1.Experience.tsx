@@ -81,7 +81,7 @@ export function RT1Experience(props: RT1ExperienceProps) {
                           {hasSingleUrl ? (
                             <>
                               {" "}
-                              <Anchor href={d.urls?.[0]}>
+                              <Anchor target="_blank" href={d.urls?.[0]}>
                                 ({d.urls?.[0]})
                               </Anchor>
                             </>
@@ -94,7 +94,9 @@ export function RT1Experience(props: RT1ExperienceProps) {
                           <List>
                             {d.urls?.map((url) => (
                               <List.Item>
-                                <Anchor href={url}>{url}</Anchor>
+                                <Anchor target="_blank" href={url}>
+                                  {url}
+                                </Anchor>
                               </List.Item>
                             ))}
                           </List>

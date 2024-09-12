@@ -22,7 +22,7 @@ export function RT1ProfessionalReference(props: RT1ProfessionalReferenceProps) {
         </Group>
         <Group>
           {phone && (
-            <Anchor href={getLinkableValue(phone)}>
+            <Anchor target="_blank" href={getLinkableValue(phone)}>
               <Group gap="xs">
                 <Icon name="whatsapp" />
                 <Text>{phone}</Text>
@@ -30,7 +30,7 @@ export function RT1ProfessionalReference(props: RT1ProfessionalReferenceProps) {
             </Anchor>
           )}
           {email && (
-            <Anchor href={getLinkableValue(email)}>
+            <Anchor target="_blank" href={getLinkableValue(email)}>
               <Group gap="xs">
                 <Icon name="email" />
                 <Text>{email}</Text>

@@ -12,7 +12,7 @@ export function AutoLinkText(props: AutoLinkTextProps) {
     <Text {...rest}>
       {children.split(" ").map((value) =>
         isValidUrl(value) ? (
-          <Anchor href={value} {...rest}>
+          <Anchor href={value} target="_blank" {...rest}>
             {value}{" "}
           </Anchor>
         ) : (
