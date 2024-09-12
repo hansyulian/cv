@@ -17,3 +17,5 @@ type SimpleDuration = {
   end?: SimpleDate;
 };
 type OnlineLinks = "linkedin" | "github" | "telegram";
+
+type Breakpoint = "xs" | "sm" | "md" | "lg" | "xl";

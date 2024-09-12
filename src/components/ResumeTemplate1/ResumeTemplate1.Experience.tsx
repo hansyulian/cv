@@ -1,13 +1,16 @@
 import { Anchor, Grid, Group, List, Stack, Text, Title } from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { TimelineGraph } from "~/components/TimelineGraph";
+import { useIsBreakpointAndHigher } from "~/hooks/isBreakpointAndHigher";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
 export type RT1ExperienceProps = {
   data: ResumeExperience;
+  index: number;
 };
 
 export function RT1Experience(props: RT1ExperienceProps) {
+  const { index } = props;
   const {
     company,
     location,
@@ -19,8 +22,14 @@ export function RT1Experience(props: RT1ExperienceProps) {
     remote,
     technologies,
   } = props.data;
+  const isSmOrHigher = useIsBreakpointAndHigher("sm");
   return (
     <Grid>
+      {!isSmOrHigher && index > 0 && (
+        <Grid.Col>
+          <TimelineGraph horizontal />
+        </Grid.Col>
+      )}
       <Grid.Col span={{ sm: 3 }}>
         <Stack gap={0}>
           <Title order={5}>{company}</Title>
@@ -33,9 +42,11 @@ export function RT1Experience(props: RT1ExperienceProps) {
           <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
         </Stack>
       </Grid.Col>
-      <Grid.Col span={{ sm: 1 }}>
-        <TimelineGraph />
-      </Grid.Col>
+      {isSmOrHigher && (
+        <Grid.Col span={{ sm: 1 }}>
+          <TimelineGraph />
+        </Grid.Col>
+      )}
       <Grid.Col span={{ sm: 8 }}>
         <Stack>
           <Stack gap={0}>

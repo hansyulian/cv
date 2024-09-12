@@ -24,7 +24,7 @@ export function RT1Section(props: RT1SectionProps) {
     <Stack w="100%">
       <UnstyledButton onClick={toggle}>
         <Group justify="space-between">
-          <Title order={4} tt="uppercase">
+          <Title order={2} tt="uppercase" flex={1}>
             {title}
           </Title>
           {!isPrinting && <Icon name={open ? "minus" : "plus"} />}

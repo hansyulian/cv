@@ -1,12 +1,4 @@
-import {
-  Anchor,
-  Avatar,
-  Group,
-  Paper,
-  Stack,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Anchor, Avatar, Group, Paper, Stack, Text } from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { getLinkableValue } from "~/utils/getLinkableValue";
 
@@ -22,7 +14,9 @@ export function RT1ProfessionalReference(props: RT1ProfessionalReferenceProps) {
         <Group>
           <Avatar name={name} src={avatarUrl} size={40} />
           <Stack flex={1} gap={0}>
-            <Title order={4}>{name}</Title>
+            <Text fz="h4" fw="bold">
+              {name}
+            </Text>
             <Text c="gray">{designation}</Text>
           </Stack>
         </Group>

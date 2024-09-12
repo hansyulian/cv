@@ -6,7 +6,8 @@ export type RT1ProfessionalReferencesProps = {
 };
 
 const spanConfig = {
-  sm: 4,
+  md: 6,
+  lg: 4,
 };
 
 export function RT1ProfessionalReferences(

@@ -14,9 +14,9 @@ export function RT1Experiences(props: RT1ExperiencesProps) {
     return [...props.data].sort(simpleDurationSortCompareFn);
   }, [props.data]);
   return (
-    <Stack gap="lg">
-      {experiences.map((experience) => (
-        <RT1Experience data={experience} />
+    <Stack gap="xl">
+      {experiences.map((experience, index) => (
+        <RT1Experience data={experience} index={index} />
       ))}
     </Stack>
   );

@@ -1,4 +1,5 @@
 import "@mantine/core/styles.css";
+import "./overrides.scss";
 import { theme } from "./config/theme.tsx";
 import { MantineProvider } from "@mantine/core";
 import { RouterProvider } from "react-router-dom";

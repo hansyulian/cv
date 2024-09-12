@@ -2,11 +2,18 @@ import { Box, Container, Paper, Space } from "@mantine/core";
 import { PropsWithChildren } from "react";
 import { useIsPrinting } from "~/hooks/useIsPrinting";
 import classes from "./PrintPaperContainer.module.scss";
+import { useIsBreakpointAndHigher } from "~/hooks/isBreakpointAndHigher";
 
 export function PrintPaperContainer(props: PropsWithChildren) {
   const isPrinting = useIsPrinting();
-  if (isPrinting) {
-    return <Container size="xl">{props.children}</Container>;
+  const isMdAndHigher = useIsBreakpointAndHigher("md");
+  if (isPrinting || !isMdAndHigher) {
+    return (
+      <Container size="xl">
+        {props.children}
+        <Space h="xl" />
+      </Container>
+    );
   }
   return (
     <Box className={classes.outerContainer}>

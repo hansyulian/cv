@@ -1,4 +1,4 @@
-import { Anchor, List, Paper, Stack, Text, Title } from "@mantine/core";
+import { Anchor, List, Paper, Stack, Text } from "@mantine/core";
 
 export type RT1PortfolioProps = {
   data: ResumePortfolio;
@@ -9,15 +9,15 @@ export function RT1Portfolio(props: RT1PortfolioProps) {
   return (
     <Paper shadow="sm" p="md" h="100%">
       <Stack flex={1} gap={0}>
-        <Title order={4}>{title}</Title>
+        <Text fz="h4" fw="bold">
+          {title}
+        </Text>
         <Text c="gray">{description}</Text>
       </Stack>
       <List>
         {urls.map((url) => (
           <List.Item>
-            <Anchor href={url}>
-              <Text>{url}</Text>
-            </Anchor>
+            <Anchor href={url}>{url}</Anchor>
           </List.Item>
         ))}
       </List>

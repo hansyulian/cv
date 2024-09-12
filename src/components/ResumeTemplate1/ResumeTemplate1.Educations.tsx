@@ -14,9 +14,9 @@ export function RT1Educations(props: RT1EducationsProps) {
     return [...props.data].sort(simpleDurationSortCompareFn);
   }, [props.data]);
   return (
-    <Stack gap="lg">
-      {educations.map((education) => (
-        <RT1Education data={education} />
+    <Stack gap="xl">
+      {educations.map((education, index) => (
+        <RT1Education data={education} index={index} />
       ))}
     </Stack>
   );

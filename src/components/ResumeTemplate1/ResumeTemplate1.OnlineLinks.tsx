@@ -6,7 +6,7 @@ export type RT1OnlineLinksProps = {
 };
 
 const spanConfig = {
-  sm: 4,
+  lg: 4,
 };
 
 export function RT1OnlineLinks(props: RT1OnlineLinksProps) {

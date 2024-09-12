@@ -4,6 +4,9 @@ import { resolve } from "path";
 
 const config = defineConfig({
   plugins: [react()],
+  server: {
+    host: "0.0.0.0",
+  },
   css: {
     preprocessorOptions: {
       scss: {

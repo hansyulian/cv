@@ -1,0 +1,9 @@
+.mantine-Anchor-root {
+  word-break: break-all;
+}
+.mantine-List-itemWrapper {
+  // hyulian: this is the width of the list indicator,
+  // this will be helpful to prevent layout breaking when having small dimension
+  // for now, just keep this first
+  padding-right: rem(21);
+}

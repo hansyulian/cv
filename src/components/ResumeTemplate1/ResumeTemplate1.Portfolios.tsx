@@ -6,7 +6,8 @@ export type RT1PortfoliosProps = {
 };
 
 const spanConfig = {
-  sm: 6,
+  md: 6,
+  lg: 4,
 };
 
 export function RT1Portfolios(props: RT1PortfoliosProps) {

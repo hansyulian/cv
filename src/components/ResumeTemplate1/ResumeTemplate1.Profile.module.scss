@@ -6,4 +6,7 @@
   @include print-only {
     padding-top: calc(2 * var(--mantine-spacing-xl));
   }
+  @include smaller-than($mantine-breakpoint-md) {
+    padding-top: calc(2 * var(--mantine-spacing-xl));
+  }
 }

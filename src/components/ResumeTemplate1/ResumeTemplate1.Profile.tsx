@@ -19,7 +19,7 @@ export function RT1Profile(props: RT1ProfileProps) {
     <Stack gap="sm">
       <Stack className={classes.container}>
         <Grid gutter="xl">
-          <Grid.Col span={{ sm: 8 }}>
+          <Grid.Col span={{ md: 8 }}>
             <Stack h="100%" justify="center">
               <Group>
                 <Avatar src={photoUrl} size={100} />
@@ -31,7 +31,7 @@ export function RT1Profile(props: RT1ProfileProps) {
               {summary && <Text ta="justify">{summary}</Text>}
             </Stack>
           </Grid.Col>
-          <Grid.Col span={{ sm: 4 }}>
+          <Grid.Col span={{ md: 4 }}>
             <Stack h="100%" justify="center">
               <RT1ProfileInfoRow
                 icon={<Icon name="location" />}

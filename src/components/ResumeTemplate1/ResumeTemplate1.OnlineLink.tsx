@@ -1,4 +1,4 @@
-import { Anchor, Group, Paper, Stack, Text, Title } from "@mantine/core";
+import { Anchor, Group, Paper, Stack, Text } from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { onlineLinkLabelMap } from "~/config/constants";
 
@@ -14,7 +14,9 @@ export function RT1OnlineLink(props: RT1OnlineLinkProps) {
         <Group>
           <Icon name={type} size={40} />
           <Stack flex={1} gap={0}>
-            <Title order={4}>{onlineLinkLabelMap[type]}</Title>
+            <Text fz="h4" fw="bold">
+              {onlineLinkLabelMap[type]}
+            </Text>
 
             <Anchor href={url}>
               <Text>{url}</Text>
