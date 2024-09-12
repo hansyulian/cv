@@ -8,7 +8,7 @@ export const data: Resume = {
     summary:
       "Accomplished and versatile software engineer with extensive experience across a diverse array of technologies. Expert in developing robust solutions and adept at navigating complex technical landscapes. A proven track record of delivering high-quality software products efficiently and effectively.",
     printOnlyHeading:
-      "This CV is built using React as a part of skill demonstration of Hans Yulian. The online version of this CV is available in https://hansyulian.github.io/ and repository url is https://github.com/hansyulian/cv",
+      "This CV has been crafted using React as a demonstration of my skills and expertise. You can view the online version of this CV here: https://hansyulian.github.io or access the source code in the GitHub repository here: https://github.com/hansyulian/cv",
   },
   experiences: [
     {
@@ -285,7 +285,18 @@ export const data: Resume = {
       ],
     },
     {
-      name: "React-Native",
+      name: "Jest",
+      level: 8,
+      periods: [
+        {
+          start: {
+            year: 2018,
+          },
+        },
+      ],
+    },
+    {
+      name: "React Native",
       level: 8,
       periods: [
         {

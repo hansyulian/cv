@@ -9,6 +9,7 @@ import {
   lighten,
 } from "@mantine/core";
 import { useMemo, useState } from "react";
+import { DevIcon } from "~/components/DevIcon";
 import { Icon } from "~/components/Icon";
 import { PrintOnly } from "~/components/PrintOnly";
 // import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
@@ -96,7 +97,10 @@ export function RT1Skills(props: RT1SkillsProps) {
           {displaySkills.map((skill) => (
             <Table.Tr>
               <Table.Td w="20%">
-                <Text fw="bold">{skill.name}</Text>
+                <Group>
+                  <DevIcon value={skill.name} />
+                  <Text fw="bold">{skill.name}</Text>
+                </Group>
               </Table.Td>
               <Table.Td>
                 <Group>
