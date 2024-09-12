@@ -4,6 +4,7 @@ import { RT1Experiences } from "~/components/ResumeTemplate1/ResumeTemplate1.Exp
 import { RT1Languages } from "~/components/ResumeTemplate1/ResumeTemplate1.Languages";
 import { RT1NotableAccomplishments } from "~/components/ResumeTemplate1/ResumeTemplate1.NotableAccomplishments";
 import { RT1OnlineLinks } from "~/components/ResumeTemplate1/ResumeTemplate1.OnlineLinks";
+import { RT1Portfolios } from "~/components/ResumeTemplate1/ResumeTemplate1.Portfolios";
 import { RT1ProfessionalReferences } from "~/components/ResumeTemplate1/ResumeTemplate1.ProfessionalReferences";
 import { RT1Profile } from "~/components/ResumeTemplate1/ResumeTemplate1.Profile";
 import { RT1Section } from "~/components/ResumeTemplate1/ResumeTemplate1.Section";
@@ -50,6 +51,11 @@ export function ResumeTemplate1(props: ResumeTemplate1Props) {
       {data.onlineLinks && data.onlineLinks.length > 0 && (
         <RT1Section title="Online Links">
           <RT1OnlineLinks data={data.onlineLinks} />
+        </RT1Section>
+      )}
+      {data.portfolios && data.portfolios.length > 0 && (
+        <RT1Section title="Portfolios">
+          <RT1Portfolios data={data.portfolios} />
         </RT1Section>
       )}
       {data.professionalReferences &&

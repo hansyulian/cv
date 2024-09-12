@@ -7,7 +7,7 @@ type Resume = {
   educations?: ResumeEducation[];
   skills?: ResumeSkill[];
   notableAccomplishments?: string[];
-  portfolio?: ResumePortfolio[];
+  portfolios?: ResumePortfolio[];
 };
 
 type ResumeProfile = {
@@ -79,5 +79,5 @@ type ResumeSkillPeriod = SimpleDuration;
 type ResumePortfolio = {
   title: string;
   description?: string;
-  link: string[];
+  urls: string[];
 };

@@ -8,7 +8,7 @@ export const data: Resume = {
     summary:
       "Accomplished and versatile software engineer with extensive experience across a diverse array of technologies. Expert in developing robust solutions and adept at navigating complex technical landscapes. A proven track record of delivering high-quality software products efficiently and effectively.",
     printOnlyHeading:
-      "This CV is built using React as a part of skill demonstration of Hans Yulian. The online version of this CV is available in https://github.com/hansyulian/cv and repository url is https://github.com/hansyulian/cv",
+      "This CV is built using React as a part of skill demonstration of Hans Yulian. The online version of this CV is available in https://hansyulian.github.io/ and repository url is https://github.com/hansyulian/cv",
   },
   experiences: [
     {
@@ -104,7 +104,7 @@ export const data: Resume = {
       projects: [
         {
           name: "Sparrow Exchange Backend",
-          urls: ["https://www.sparrowexchange.com/"],
+          urls: ["https://www.sparrowexchange.com"],
         },
         {
           name: "Cakepool",
@@ -619,5 +619,76 @@ export const data: Resume = {
     "Chairman of the Windows Phone Workshop at ITHB (December 2013), an event organized by the Informatics Engineering Community to provide an overview of Windows Phone programming. The event was attended by around 30 students and 5 lecturers from ITHB’s Wireless Mobile Computing course.",
     "Chairman of the PhoneGap Workshop at ITHB (December 2013), an event that introduced cross-platform mobile programming frameworks, attended by around 40 ITHB students.",
     "Instructor at the Bandung Informatics Olympiad (April 2013), an event organized by MGMP TIK to prepare high school students for the city-level National Science Olympiad. The event included around 50 participants from various schools in Bandung, focusing on informatics training.",
+  ],
+  portfolios: [
+    {
+      title: "Online Resume/CV",
+      description:
+        "Source code repository for this interactive CV, showcasing my personal website and technical skills.",
+      urls: ["https://github.com/hansyulian/cv"],
+    },
+    {
+      title: "HAuthenticator",
+      description:
+        "A custom TOTP (Time-based One-Time Password) mobile app built with React Native, developed as a personal alternative to Google Authenticator.",
+      urls: ["https://github.com/hansyulian/hauthenticator"],
+    },
+    {
+      title: "Home Dashboard",
+      description:
+        "A desktop app built with Flutter, designed to act as a personal home dashboard running 24/7 on a Raspberry Pi for home automation and monitoring.",
+      urls: ["https://github.com/hansyulian/home-dashboard"],
+    },
+    {
+      title: "Voyager Site",
+      description:
+        "A web project for FXI Solutions Sdn. Bhd. completed in 2024 as a freelance developer, delivering a high-quality web solution.",
+      urls: ["https://voyager.v-circle.com"],
+    },
+    {
+      title: "Bake Mobile App",
+      description:
+        "A mobile application developed in React Native during my tenure at Cake Group Pte. Ltd., providing users with access to financial and DeFi services.",
+      urls: [
+        "https://play.google.com/store/apps/details?id=com.cakedefi.app",
+        "https://apps.apple.com/me/app/bake-formerly-cake-defi/id1564415526",
+      ],
+    },
+    {
+      title: "Bake WebApp",
+      description:
+        "A responsive web application built with React during my time at Cake Group Pte. Ltd., offering a seamless financial platform experience for users.",
+      urls: ["https://bake.io"],
+    },
+    {
+      title: "Bake Website",
+      description:
+        "A marketing website built using React at Cake Group Pte. Ltd., focused on promoting financial products and services to a global audience.",
+      urls: ["https://bake.io"],
+    },
+    {
+      title: "Sparrow Exchange Backend",
+      description:
+        "Backend development for Sparrow Exchange using Express.js, completed during my role at Zynesis Pte. Ltd. to support a secure cryptocurrency exchange.",
+      urls: ["https://www.sparrowexchange.com"],
+    },
+    {
+      title: "Bahamas Central Bank Digital Currency",
+      description:
+        "Developed a digital currency platform for the Central Bank of The Bahamas using React, React Native, and Express.js while at Zynesis Pte. Ltd.",
+      urls: ["https://www.sanddollar.bs/"],
+    },
+    {
+      title: "Equis Delta Horses Marketing Portal",
+      description:
+        "A marketing portal for Equis Delta Horses, developed using Handlebars, LESS, and Gulp as part of a freelance project with Nanuru Design.",
+      urls: ["https://deltahorses.nl/en"],
+    },
+    {
+      title: "Malaysia Open Data Platform",
+      description:
+        "Developed Malaysia's official open data platform using Laravel and CKAN during my time at Fusionex International Sdn. Bhd., facilitating public data access.",
+      urls: ["https://data.gov.my/"],
+    },
   ],
 };

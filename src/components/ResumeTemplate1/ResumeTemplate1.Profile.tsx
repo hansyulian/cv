@@ -1,4 +1,4 @@
-import { Grid, Group, Avatar, Stack, Text, Title, Box } from "@mantine/core";
+import { Grid, Group, Avatar, Stack, Text, Title } from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { RT1ProfileInfoRow } from "~/components/ResumeTemplate1/ResumeTemplate1.ProfileInfoRow";
 import classes from "./ResumeTemplate1.Profile.module.scss";
