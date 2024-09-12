@@ -2,7 +2,7 @@ type Resume = {
   profile: ResumeProfile;
   references?: ResumeReference[];
   experiences?: ResumeExperience[];
-  socialMedia?: ResumeSocialMedia[];
+  onlineLinks?: ResumeOnlineLinks[];
   languages?: ResumeLanguage[];
   educations?: ResumeEducation[];
   skills?: ResumeSkill[];
@@ -18,8 +18,8 @@ type ResumeProfile = {
   summary?: string;
 };
 
-type ResumeSocialMedia = {
-  type: SocialMedia;
+type ResumeOnlineLinks = {
+  type: OnlineLinks;
   url: string;
 };
 

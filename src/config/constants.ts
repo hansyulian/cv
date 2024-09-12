@@ -1,4 +1,4 @@
-export const socialMediaLabelMap: Record<SocialMedia, string> = {
+export const onlineLinkLabelMap: Record<OnlineLinks, string> = {
   github: "Github",
   linkedin: "LinkedIn",
   telegram: "Telegram",

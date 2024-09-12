@@ -541,7 +541,7 @@ export const data: Resume = {
       ],
     },
   ],
-  socialMedia: [
+  onlineLinks: [
     {
       type: "linkedin",
       url: "https://www.linkedin.com/in/hans-yulian-84b68090",
