@@ -16,7 +16,7 @@ export function RT1Profile(props: RT1ProfileProps) {
     props.data;
 
   return (
-    <>
+    <Stack gap="sm">
       <Stack className={classes.container}>
         <Grid gutter="xl">
           <Grid.Col span={{ sm: 8 }}>
@@ -59,6 +59,6 @@ export function RT1Profile(props: RT1ProfileProps) {
           <AutoLinkText fz="xs">{printOnlyHeading}</AutoLinkText>
         </PrintOnly>
       )}
-    </>
+    </Stack>
   );
 }
