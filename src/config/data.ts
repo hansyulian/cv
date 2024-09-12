@@ -30,12 +30,12 @@ export const data: Resume = {
         },
       ],
       description: [
-        "Developed high-fidelity sales order system for Voyager’s e-commerce site.",
-        "Implemented web app features using React and Typescript for front-end.",
-        "Ensured precise execution of Figma designs within design specs.",
-        "Utilized C# and .NET Core 8 for backend functionality.",
+        "Developed a high-fidelity sales order system for Voyager’s e-commerce site.",
+        "Implemented web app features using React and TypeScript for the front-end.",
+        "Ensured precise execution of Figma designs within the specified design specs.",
+        "Utilized C# and .NET Core 8 for back-end functionality.",
       ],
-      technologies: ["React", "Typescript", "C#", ".Net Core 8", "Figma"],
+      technologies: ["React", "TypeScript", "C#", ".NET Core 8", "Figma"],
     },
     {
       title: "Senior Software Engineer Lv. 3",
@@ -68,20 +68,20 @@ export const data: Resume = {
         },
       ],
       description: [
-        "Architected mobile app software architecture",
-        "Performed code review",
-        "Engineered an acurate design from Figma",
-        "Implemented unit testing using Jest",
+        "Architected the mobile app software architecture.",
+        "Performed code reviews and ensured high code quality.",
+        "Engineered accurate design implementations from Figma.",
+        "Implemented unit testing using Jest.",
       ],
       achievements: [
-        "U-Zyn Chua as the owner of Zynesis and CTO of Cake moved me from Zynesis to Cake early than the other team member because of the need of react native mobile development for Cake.",
-        "Launched the first version of Bake mobile app within 6 months of development as a team of 3 people in July 2021",
-        "Pioneered the mobile app development of Cake",
+        "Recruited early by U-Zyn Chua, CTO of Cake, due to a need for React Native mobile development expertise.",
+        "Successfully launched the first version of the Bake mobile app within 6 months as part of a team of 3 in July 2021.",
+        "Pioneered the mobile app development for Cake.",
       ],
       technologies: [
         "React",
-        "React-Native",
-        "Typescript",
+        "React Native",
+        "TypeScript",
         "Figma",
         "Redis",
         "PostgreSQL",
@@ -108,7 +108,7 @@ export const data: Resume = {
         },
         {
           name: "Cakepool",
-          description: "The initial version of Cake",
+          description: "The initial version of the Cake platform.",
           urls: ["https://bake.io"],
         },
         {
@@ -116,23 +116,23 @@ export const data: Resume = {
           urls: ["https://www.sanddollar.bs/"],
         },
       ],
-      technologies: [
-        "React",
-        "Typescript",
-        "GraphQL",
-        "React-Native",
-        "SCSS",
-        "Jest",
-      ],
       description: [
-        "Architected back-end, front-end, and mobile software architecture",
-        "Implemented unit testing using Jest",
-        "Work closesly with designer",
+        "Architected back-end, front-end, and mobile software architectures.",
+        "Implemented unit testing using Jest.",
+        "Worked closely with designers to ensure design fidelity.",
       ],
       achievements: [
-        "Established a robust architecture for backend and front-end",
-        "Pioneered the mobile-app development using React-Native",
-        "Created an architecture bridge that allow designer to implement design directly on the platform",
+        "Established a robust architecture for both back-end and front-end systems.",
+        "Pioneered mobile app development using React Native.",
+        "Created a bridge for designers to implement designs directly on the platform.",
+      ],
+      technologies: [
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "React Native",
+        "SCSS",
+        "Jest",
       ],
     },
     {
@@ -155,7 +155,7 @@ export const data: Resume = {
           name: "Equis Mobile App",
         },
         {
-          name: "SRI-plastics ERP solution",
+          name: "SRI-plastics ERP Solution",
         },
       ],
       technologies: [
@@ -164,8 +164,8 @@ export const data: Resume = {
         "React",
         "GraphQL",
         "Next.js",
-        "Typescript",
-        "React-Native",
+        "TypeScript",
+        "React Native",
         "Neo4j",
         "Elastic Search",
       ],
@@ -186,28 +186,28 @@ export const data: Resume = {
       projects: [
         {
           name: "Malaysia Digital Free Trade Zone Platform",
-          description: "E-PAM system for Malaysia Government",
+          description: "E-PAM system for the Malaysian Government.",
         },
         {
           name: "GIANT Analytics Advanced Analytics",
           description:
-            "An auto model generator using machine learning microservice module using H20.ai and Python",
+            "Developed an auto model generator using machine learning microservice module with H2O.ai and Python.",
         },
         {
           name: "GIANT Form Engine",
           description:
-            "A form builder that will allow user to design form and directly input their data in GIANT Analytics",
+            "Created a form builder to design and input data into GIANT Analytics.",
         },
         {
           name: "GIANT Marketing Portal",
-          description: "A marketing portal for GIANT Analytics",
+          description: "Developed a marketing portal for GIANT Analytics.",
         },
       ],
       description: [
-        "Guided juniors & interns through technologies used in development",
-        "Designer software architecture for projects",
-        "Reviewed code made by other developers",
-        "Work closely with solution architects to build a robust software architecture",
+        "Guided juniors and interns through development technologies.",
+        "Designed software architecture for various projects.",
+        "Reviewed code produced by other developers.",
+        "Collaborated closely with solution architects to build robust software architectures.",
       ],
       technologies: [
         "PHP",
@@ -220,7 +220,7 @@ export const data: Resume = {
         "RabbitMQ",
       ],
       achievements: [
-        "Get promoted to Senior Consultant with just 6 months professional experience",
+        "Promoted to Senior Consultant with only 6 months of professional experience.",
       ],
     },
     {
@@ -237,15 +237,19 @@ export const data: Resume = {
         month: 3,
       },
       projects: [
-        { name: "Malaysia Open Data Platform", urls: ["https://data.gov.my/"] },
+        {
+          name: "Malaysia Open Data Platform",
+          urls: ["https://data.gov.my/"],
+        },
       ],
       description: [
-        "Work closely with senior consultant and senior solution architect",
-        "Implemented design provided by designer",
+        "Collaborated closely with senior consultants and solution architects.",
+        "Implemented designs provided by designers.",
       ],
-      technologies: ["Laravel", "CKAN", "PHP", "CSS", "Javascript", "HTML"],
+      technologies: ["Laravel", "CKAN", "PHP", "CSS", "JavaScript", "HTML"],
     },
   ],
+
   skills: [
     {
       name: "Typescript",
@@ -595,11 +599,13 @@ export const data: Resume = {
         month: 5,
       },
       degree: "Bachelor of Science",
-      verdict: "GPA 3.96/4.00",
+      verdict: "GPA: 3.96/4.00",
       description: [
-        "Best graduate of ITHB 2015",
-        "Fastest graduate of: 3 years accelerated program",
-        "Received 5 semester of scholarships for academic performance",
+        "Graduated as the top student of ITHB in 2015.",
+        "Completed an accelerated 3-year program.",
+        "Awarded scholarships for academic excellence over 5 semesters.",
+        "Achieved the highest GPA in the graduation year 2015.",
+        "Recorded the highest GPA in the Computer Science department at ITHB.",
       ],
     },
   ],
@@ -648,7 +654,7 @@ export const data: Resume = {
     {
       title: "Bake Mobile App",
       description:
-        "A mobile application developed in React Native during my tenure at Cake Group Pte. Ltd., providing users with access to financial and DeFi services.",
+        "A mobile application developed in React Native during my tenure at Cake Group Pte. Ltd., providing users with access to cryptocurrency invvestment and DeFi services.",
       urls: [
         "https://play.google.com/store/apps/details?id=com.cakedefi.app",
         "https://apps.apple.com/me/app/bake-formerly-cake-defi/id1564415526",
@@ -657,19 +663,19 @@ export const data: Resume = {
     {
       title: "Bake WebApp",
       description:
-        "A responsive web application built with React during my time at Cake Group Pte. Ltd., offering a seamless financial platform experience for users.",
+        "A responsive web application built with React during my time at Cake Group Pte. Ltd., offering a seamless cryptocurrency investment platform experience for users.",
       urls: ["https://bake.io"],
     },
     {
       title: "Bake Website",
       description:
-        "A marketing website built using React at Cake Group Pte. Ltd., focused on promoting financial products and services to a global audience.",
+        "A marketing website built using React at Cake Group Pte. Ltd., focused on promoting cryptocurrency investment products and services to a global audience.",
       urls: ["https://bake.io"],
     },
     {
       title: "Sparrow Exchange Backend",
       description:
-        "Backend development for Sparrow Exchange using Express.js, completed during my role at Zynesis Pte. Ltd. to support a secure cryptocurrency exchange.",
+        "Backend development for Sparrow Exchange using Express.js, completed during my role at Zynesis Pte. Ltd. to support a secure option smart contract exchange.",
       urls: ["https://www.sparrowexchange.com"],
     },
     {
@@ -687,7 +693,7 @@ export const data: Resume = {
     {
       title: "Malaysia Open Data Platform",
       description:
-        "Developed Malaysia's official open data platform using Laravel and CKAN during my time at Fusionex International Sdn. Bhd., facilitating public data access.",
+        "Developed Malaysia's official open data platform using Laravel and CKAN during my time at Fusionex International Sdn. Bhd., facilitating public data access provided by government.",
       urls: ["https://data.gov.my/"],
     },
   ],
