@@ -565,7 +565,7 @@ export const data: Resume = {
       proficiency: "professional",
     },
   ],
-  references: [
+  professionalReferences: [
     {
       name: "U-Zyn Chua",
       designation:

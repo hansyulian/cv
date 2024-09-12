@@ -1,6 +1,6 @@
 type Resume = {
   profile: ResumeProfile;
-  references?: ResumeReference[];
+  professionalReferences?: ResumeProfessionalReference[];
   experiences?: ResumeExperience[];
   onlineLinks?: ResumeOnlineLinks[];
   languages?: ResumeLanguage[];
@@ -28,9 +28,10 @@ type ResumeLanguage = {
   proficiency: LanguageProficiency;
 };
 
-type ResumeReference = {
+type ResumeProfessionalReference = {
   name: string;
   designation: string;
+  avatarUrl?: string;
   email?: string;
   phone?: string;
 };
