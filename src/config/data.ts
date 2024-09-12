@@ -391,7 +391,7 @@ export const data: Resume = {
     },
     {
       name: "GraphQL",
-      level: 6,
+      level: 5,
       periods: [{ start: { year: 2017 }, end: { year: 2023 } }],
     },
     {
@@ -404,6 +404,16 @@ export const data: Resume = {
           },
         },
       ],
+    },
+    {
+      name: "Docker",
+      level: 7,
+      periods: [{ start: { year: 2017 } }],
+    },
+    {
+      name: "uBuntu Server",
+      level: 8,
+      periods: [{ start: { year: 2017 } }],
     },
     {
       name: "MySQL",
@@ -631,7 +641,10 @@ export const data: Resume = {
       title: "Online Resume/CV",
       description:
         "Source code repository for this interactive CV, showcasing my personal website and technical skills.",
-      urls: ["https://github.com/hansyulian/cv"],
+      urls: [
+        "https://hansyulian.github.io",
+        "https://github.com/hansyulian/cv",
+      ],
     },
     {
       title: "HAuthenticator",

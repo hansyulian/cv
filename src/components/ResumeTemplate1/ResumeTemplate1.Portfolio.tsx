@@ -17,7 +17,9 @@ export function RT1Portfolio(props: RT1PortfolioProps) {
       <List>
         {urls.map((url) => (
           <List.Item>
-            <Anchor href={url}>{url}</Anchor>
+            <Anchor target="_blank" href={url}>
+              {url}
+            </Anchor>
           </List.Item>
         ))}
       </List>
