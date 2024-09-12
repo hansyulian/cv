@@ -4,12 +4,13 @@ import { RT1ProfileInfoRow } from "~/components/ResumeTemplate1/ResumeTemplate1.
 import classes from "./ResumeTemplate1.Profile.module.scss";
 
 export type RT1ProfileProps = {
-  profile: ResumeProfile;
+  data: ResumeProfile;
   photoUrl: string;
 };
 
 export function RT1Profile(props: RT1ProfileProps) {
-  const { profile, photoUrl } = props;
+  const { photoUrl } = props;
+  const { address, email, name, phone, summary, title } = props.data;
 
   return (
     <Box className={classes.container}>
@@ -19,11 +20,11 @@ export function RT1Profile(props: RT1ProfileProps) {
             <Group>
               <Avatar src={photoUrl} size={100} />
               <Stack gap={0}>
-                <Title tt="uppercase">{profile.name}</Title>
-                {profile.title && <Text fz="lg">{profile.title}</Text>}
+                <Title tt="uppercase">{name}</Title>
+                {title && <Text fz="lg">{title}</Text>}
               </Stack>
             </Group>
-            {profile.summary && <Text ta="justify">{profile.summary}</Text>}
+            {summary && <Text ta="justify">{summary}</Text>}
           </Stack>
         </Grid.Col>
         <Grid.Col span={{ sm: 4 }}>
@@ -31,18 +32,18 @@ export function RT1Profile(props: RT1ProfileProps) {
             <RT1ProfileInfoRow
               icon={<Icon name="location" />}
               withDivider
-              value={profile.address}
+              value={address}
             />
             <RT1ProfileInfoRow
               icon={<Icon name="email" />}
               withDivider
-              value={profile.email}
+              value={email}
             />
 
             <RT1ProfileInfoRow
               icon={<Icon name="whatsapp" />}
               withDivider
-              value={profile.phone}
+              value={phone}
             />
           </Stack>
         </Grid.Col>

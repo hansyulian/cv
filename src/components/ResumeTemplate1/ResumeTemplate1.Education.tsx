@@ -4,25 +4,24 @@ import { TimelineGraph } from "~/components/TimelineGraph";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
 export type RT1EducationProps = {
-  education: ResumeEducation;
+  data: ResumeEducation;
 };
 
 export function RT1Education(props: RT1EducationProps) {
-  const { education } = props;
+  const { degree, institution, location, verdict, description, end, start } =
+    props.data;
   return (
     <Grid>
       <Grid.Col span={{ sm: 3 }}>
         <Stack gap={0}>
-          <Title order={5}>{education.institution}</Title>
+          <Title order={5}>{institution}</Title>
           <Group gap="xs">
             <Icon name="location" size={16} />
             <Text flex={1} c="gray">
-              {education.location}
+              {location}
             </Text>
           </Group>
-          <Text c="gray">
-            {getSimpleDateDurationLabel(education.start, education.end)}
-          </Text>
+          <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
         </Stack>
       </Grid.Col>
       <Grid.Col span={{ sm: 1 }}>
@@ -32,14 +31,14 @@ export function RT1Education(props: RT1EducationProps) {
         <Stack>
           <Stack gap={0}>
             <Text fz="h4" fw="bold">
-              {education.degree}
+              {degree}
             </Text>
             <List withPadding>
               <List.Item>
-                <Text fw="bold">Score: {education.verdict}</Text>
+                <Text fw="bold">Score: {verdict}</Text>
               </List.Item>
-              {education.description &&
-                education.description.map((d) => (
+              {description &&
+                description.map((d) => (
                   <List.Item>
                     <Text>{d}</Text>
                   </List.Item>

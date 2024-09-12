@@ -11,12 +11,11 @@ import { Icon } from "~/components/Icon";
 import { getLinkableValue } from "~/utils/getLinkableValue";
 
 export type RT1ProfessionalReferenceProps = {
-  professionalReference: ResumeProfessionalReference;
+  data: ResumeProfessionalReference;
 };
 
 export function RT1ProfessionalReference(props: RT1ProfessionalReferenceProps) {
-  const { designation, name, avatarUrl, email, phone } =
-    props.professionalReference;
+  const { designation, name, avatarUrl, email, phone } = props.data;
   return (
     <Paper shadow="sm" p="md" h="100%">
       <Stack justify="center" h="100%">

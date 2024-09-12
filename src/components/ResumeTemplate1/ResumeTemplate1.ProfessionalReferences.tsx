@@ -2,7 +2,7 @@ import { Grid } from "@mantine/core";
 import { RT1ProfessionalReference } from "~/components/ResumeTemplate1/ResumeTemplate1.ProfessionalReference";
 
 export type RT1ProfessionalReferencesProps = {
-  professionalReferences: ResumeProfessionalReference[];
+  data: ResumeProfessionalReference[];
 };
 
 const spanConfig = {
@@ -12,13 +12,13 @@ const spanConfig = {
 export function RT1ProfessionalReferences(
   props: RT1ProfessionalReferencesProps
 ) {
-  const { professionalReferences } = props;
+  const { data } = props;
 
   return (
     <Grid>
-      {professionalReferences.map((record) => (
+      {data.map((record) => (
         <Grid.Col span={spanConfig}>
-          <RT1ProfessionalReference professionalReference={record} />
+          <RT1ProfessionalReference data={record} />
         </Grid.Col>
       ))}
     </Grid>

@@ -2,17 +2,17 @@ import { List } from "@mantine/core";
 import { AutoLinkText } from "~/components/AutoLinkText";
 
 export type RT1NotableAccomplishmentsProps = {
-  notableAccomplishments: string[];
+  data: string[];
 };
 
 export function RT1NotableAccomplishments(
   props: RT1NotableAccomplishmentsProps
 ) {
-  const { notableAccomplishments } = props;
+  const { data } = props;
 
   return (
     <List>
-      {notableAccomplishments.map((extra) => (
+      {data.map((extra) => (
         <List.Item>
           <AutoLinkText>{extra}</AutoLinkText>
         </List.Item>

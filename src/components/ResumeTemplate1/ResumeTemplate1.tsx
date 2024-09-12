@@ -19,47 +19,43 @@ export function ResumeTemplate1(props: ResumeTemplate1Props) {
 
   return (
     <Stack gap="xl">
-      <RT1Profile profile={data.profile} photoUrl={photoUrl} />
+      <RT1Profile data={data.profile} photoUrl={photoUrl} />
 
       {data.experiences && data.experiences.length > 0 && (
         <RT1Section title="Work Experiences">
-          <RT1Experiences experiences={data.experiences} />
+          <RT1Experiences data={data.experiences} />
         </RT1Section>
       )}
       {data.educations && data.educations.length > 0 && (
         <RT1Section title="Educations">
-          <RT1Educations educations={data.educations} />
+          <RT1Educations data={data.educations} />
         </RT1Section>
       )}
       {data.languages && data.languages.length > 0 && (
         <RT1Section title="Languages">
-          <RT1Languages languages={data.languages} />
+          <RT1Languages data={data.languages} />
         </RT1Section>
       )}
       {data.skills && data.skills.length > 0 && (
         <RT1Section title="Skills">
-          <RT1Skills skills={data.skills} />
+          <RT1Skills data={data.skills} />
         </RT1Section>
       )}
       {data.notableAccomplishments &&
         data.notableAccomplishments.length > 0 && (
           <RT1Section title="Notable Accomplishments">
-            <RT1NotableAccomplishments
-              notableAccomplishments={data.notableAccomplishments}
-            />
+            <RT1NotableAccomplishments data={data.notableAccomplishments} />
           </RT1Section>
         )}
       {data.onlineLinks && data.onlineLinks.length > 0 && (
         <RT1Section title="Online Links">
-          <RT1OnlineLinks onlineLinks={data.onlineLinks} />
+          <RT1OnlineLinks data={data.onlineLinks} />
         </RT1Section>
       )}
       {data.professionalReferences &&
         data.professionalReferences.length > 0 && (
           <RT1Section title="Professional References">
-            <RT1ProfessionalReferences
-              professionalReferences={data.professionalReferences}
-            />
+            <RT1ProfessionalReferences data={data.professionalReferences} />
           </RT1Section>
         )}
     </Stack>

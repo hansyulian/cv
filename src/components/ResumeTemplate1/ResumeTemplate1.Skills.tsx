@@ -5,15 +5,15 @@ import { PrintOnly } from "~/components/PrintOnly";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
 export type RT1SkillsProps = {
-  skills: ResumeSkill[];
+  data: ResumeSkill[];
 };
 
 export function RT1Skills(props: RT1SkillsProps) {
-  const { skills } = props;
+  const { data } = props;
   const [filter, setFilter] = useState("");
 
   const displaySkills = useMemo(() => {
-    let result = [...skills];
+    let result = [...data];
     if (filter) {
       const filterLowerCase = filter.toLowerCase();
       result = result.filter((record) =>
@@ -22,7 +22,7 @@ export function RT1Skills(props: RT1SkillsProps) {
     }
     result.sort((a, b) => (a.level > b.level ? -1 : 1));
     return result;
-  }, [filter, skills]);
+  }, [filter, data]);
 
   return (
     <Stack>

@@ -3,21 +3,21 @@ import { Icon } from "~/components/Icon";
 import { onlineLinkLabelMap } from "~/config/constants";
 
 export type RT1OnlineLinkProps = {
-  onlineLink: ResumeOnlineLinks;
+  data: ResumeOnlineLinks;
 };
 
 export function RT1OnlineLink(props: RT1OnlineLinkProps) {
-  const { onlineLink } = props;
+  const { type, url } = props.data;
   return (
     <Paper shadow="sm" p="md" h="100%">
       <Stack justify="center" h="100%">
         <Group>
-          <Icon name={onlineLink.type} size={40} />
+          <Icon name={type} size={40} />
           <Stack flex={1} gap={0}>
-            <Title order={4}>{onlineLinkLabelMap[onlineLink.type]}</Title>
+            <Title order={4}>{onlineLinkLabelMap[type]}</Title>
 
-            <Anchor href={onlineLink.url}>
-              <Text>{onlineLink.url}</Text>
+            <Anchor href={url}>
+              <Text>{url}</Text>
             </Anchor>
           </Stack>
         </Group>

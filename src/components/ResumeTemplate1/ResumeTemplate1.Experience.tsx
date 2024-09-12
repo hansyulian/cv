@@ -4,25 +4,33 @@ import { TimelineGraph } from "~/components/TimelineGraph";
 import { getSimpleDateDurationLabel } from "~/utils/getSimpleDateDurationLabel";
 
 export type RT1ExperienceProps = {
-  experience: ResumeExperience;
+  data: ResumeExperience;
 };
 
 export function RT1Experience(props: RT1ExperienceProps) {
-  const { experience } = props;
+  const {
+    company,
+    location,
+    start,
+    title,
+    description,
+    end,
+    projects,
+    remote,
+    technologies,
+  } = props.data;
   return (
     <Grid>
       <Grid.Col span={{ sm: 3 }}>
         <Stack gap={0}>
-          <Title order={5}>{experience.company}</Title>
+          <Title order={5}>{company}</Title>
           <Group gap="xs">
             <Icon name="location" size={16} />
             <Text c="gray" flex={1}>
-              {experience.location} {experience.remote ? "(Remote)" : ""}
+              {location} {remote ? "(Remote)" : ""}
             </Text>
           </Group>
-          <Text c="gray">
-            {getSimpleDateDurationLabel(experience.start, experience.end)}
-          </Text>
+          <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
         </Stack>
       </Grid.Col>
       <Grid.Col span={{ sm: 1 }}>
@@ -32,11 +40,11 @@ export function RT1Experience(props: RT1ExperienceProps) {
         <Stack>
           <Stack gap={0}>
             <Text fz="h4" fw="bold">
-              {experience.title}
+              {title}
             </Text>
-            {experience.description && experience.description.length > 0 && (
+            {description && description.length > 0 && (
               <List withPadding>
-                {experience.description.map((d) => (
+                {description.map((d) => (
                   <List.Item>
                     <Text>{d}</Text>
                   </List.Item>
@@ -44,14 +52,14 @@ export function RT1Experience(props: RT1ExperienceProps) {
               </List>
             )}
           </Stack>
-          {experience.projects && experience.projects.length > 0 && (
+          {projects && projects.length > 0 && (
             <Stack gap={0}>
               <Group gap="xs">
                 <Icon name="project" />
                 <Text>Projects:</Text>
               </Group>
               <List withPadding>
-                {experience.projects.map((d) => {
+                {projects.map((d) => {
                   const hasSingleUrl = d.urls?.length === 1;
                   const hasMultiUrl = (d.urls?.length || 0) > 1;
                   return (
@@ -87,12 +95,10 @@ export function RT1Experience(props: RT1ExperienceProps) {
               </List>
             </Stack>
           )}
-          {experience.technologies && experience.technologies.length > 0 && (
+          {technologies && technologies.length > 0 && (
             <Group gap="xs">
               <Icon name="code" />
-              <Text flex={1}>
-                Technologies: {experience.technologies.join(", ")}
-              </Text>
+              <Text flex={1}>Technologies: {technologies.join(", ")}</Text>
             </Group>
           )}
         </Stack>

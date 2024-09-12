@@ -2,15 +2,15 @@ import { Text, Rating, Stack, Table, Group } from "@mantine/core";
 import { proficiencySequence, proficiencyLabelMap } from "~/config/constants";
 
 export type RT1LanguagesProps = {
-  languages: ResumeLanguage[];
+  data: ResumeLanguage[];
 };
 export function RT1Languages(props: RT1LanguagesProps) {
-  const { languages } = props;
+  const { data } = props;
 
   return (
     <Stack>
       <Table>
-        {languages.map((language) => (
+        {data.map((language) => (
           <Table.Tr>
             <Table.Td w="20%">
               <Text fw="bold">{language.language}</Text>
