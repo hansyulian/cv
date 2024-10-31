@@ -1,4 +1,12 @@
-import { Grid, Group, List, Stack, Text, Title } from "@mantine/core";
+import {
+  Grid,
+  Group,
+  List,
+  Stack,
+  Text,
+  ThemeIcon,
+  Title,
+} from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { TimelineGraph } from "~/components/TimelineGraph";
 import { useIsBreakpointAndHigher } from "~/hooks/isBreakpointAndHigher";
@@ -25,12 +33,19 @@ export function RT1Education(props: RT1EducationProps) {
         <Stack gap={0}>
           <Title order={5}>{institution}</Title>
           <Group gap="xs">
-            <Icon name="location" size={16} />
+            <ThemeIcon>
+              <Icon name="location" size={16} />
+            </ThemeIcon>
             <Text flex={1} c="gray">
               {location}
             </Text>
           </Group>
-          <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
+          <Group gap="xs">
+            <ThemeIcon>
+              <Icon name="calendar" size={16} />
+            </ThemeIcon>
+            <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
+          </Group>
         </Stack>
       </Grid.Col>
       {isSmOrHigher && (

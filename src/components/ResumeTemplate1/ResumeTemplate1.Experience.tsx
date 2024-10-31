@@ -1,4 +1,13 @@
-import { Anchor, Grid, Group, List, Stack, Text, Title } from "@mantine/core";
+import {
+  Anchor,
+  Grid,
+  Group,
+  List,
+  Stack,
+  Text,
+  ThemeIcon,
+  Title,
+} from "@mantine/core";
 import { Icon } from "~/components/Icon";
 import { TimelineGraph } from "~/components/TimelineGraph";
 import { useIsBreakpointAndHigher } from "~/hooks/isBreakpointAndHigher";
@@ -34,12 +43,19 @@ export function RT1Experience(props: RT1ExperienceProps) {
         <Stack gap={0}>
           <Title order={5}>{company}</Title>
           <Group gap="xs">
-            <Icon name="location" size={16} />
+            <ThemeIcon>
+              <Icon name="location" size={16} />
+            </ThemeIcon>
             <Text c="gray" flex={1}>
               {location} {remote ? "(Remote)" : ""}
             </Text>
           </Group>
-          <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
+          <Group gap="xs">
+            <ThemeIcon>
+              <Icon name="calendar" size={16} />
+            </ThemeIcon>
+            <Text c="gray">{getSimpleDateDurationLabel(start, end)}</Text>
+          </Group>
         </Stack>
       </Grid.Col>
       {isSmOrHigher && (
@@ -66,7 +82,9 @@ export function RT1Experience(props: RT1ExperienceProps) {
           {projects && projects.length > 0 && (
             <Stack gap={0}>
               <Group gap="xs">
-                <Icon name="project" />
+                <ThemeIcon>
+                  <Icon name="project" />
+                </ThemeIcon>
                 <Text>Projects:</Text>
               </Group>
               <List withPadding>
@@ -110,7 +128,9 @@ export function RT1Experience(props: RT1ExperienceProps) {
           )}
           {technologies && technologies.length > 0 && (
             <Group gap="xs">
-              <Icon name="code" />
+              <ThemeIcon>
+                <Icon name="code" />
+              </ThemeIcon>
               <Text flex={1}>Technologies: {technologies.join(", ")}</Text>
             </Group>
           )}

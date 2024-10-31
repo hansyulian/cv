@@ -22,6 +22,7 @@ type ResumeProfile = {
 
 type ResumeOnlineLinks = {
   type: OnlineLinks;
+  title?: string;
   url: string;
 };
 

@@ -13,6 +13,7 @@ import {
   IconBrandWhatsapp,
   IconCode,
   IconSearch,
+  IconCalendar,
 } from "@tabler/icons-react";
 
 const iconMap = {
@@ -30,6 +31,7 @@ const iconMap = {
   project: IconBriefcase,
   code: IconCode,
   search: IconSearch,
+  calendar: IconCalendar,
 };
 
 export type IconNames = keyof typeof iconMap;

@@ -330,14 +330,11 @@ export const data: Resume = {
     },
     {
       name: "Next.js",
-      level: 5,
+      level: 7,
       periods: [
         {
           start: {
             year: 2022,
-          },
-          end: {
-            year: 2023,
           },
         },
       ],
@@ -403,7 +400,7 @@ export const data: Resume = {
     {
       name: "GraphQL",
       level: 5,
-      periods: [{ start: { year: 2017 }, end: { year: 2023 } }],
+      periods: [{ start: { year: 2017 } }],
     },
     {
       name: "PostgreSQL",
@@ -570,6 +567,16 @@ export const data: Resume = {
   ],
   onlineLinks: [
     {
+      type: "code",
+      title: "HackerRank",
+      url: "https://www.hackerrank.com/profile/hansyulian",
+    },
+    {
+      type: "code",
+      title: "uVa Online Judge",
+      url: "http://uhunt.felix-halim.net/id/78903",
+    },
+    {
       type: "linkedin",
       url: "https://www.linkedin.com/in/hans-yulian-84b68090",
     },
@@ -633,7 +640,7 @@ export const data: Resume = {
   notableAccomplishments: [
     "Achieved a TOEFL iBT score of 97 in February 2018.",
     "Achieved a TOEFL PBT score of 583 in April 2015.",
-    "Engaged in competitive programming practice during high school: http://uhunt.felix-halim.net/id/78903.",
+    "Engaged in competitive programming practice during high school: http://uhunt.felix-halim.net/id/78903",
     "Awarded 1st Consolation Winner at the Kompetisi Pemrograman UGM 2011, an informatics competition for high school students.",
     "Awarded 1st Place in the ITB Akravidia Programming Contest 2011, an informatics competition for high school students.",
     "Awarded 2nd Place in the ITHB IECCC 2010, an informatics competition for high school students.",

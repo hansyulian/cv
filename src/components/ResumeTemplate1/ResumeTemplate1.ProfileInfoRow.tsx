@@ -1,4 +1,4 @@
-import { Text, Divider, Group, Stack, Anchor } from "@mantine/core";
+import { Text, Divider, Group, Stack, Anchor, ThemeIcon } from "@mantine/core";
 import { ReactNode } from "react";
 import { getLinkableValue } from "~/utils/getLinkableValue";
 
@@ -15,7 +15,7 @@ export function RT1ProfileInfoRow(props: RT1ProfileInfoRowProps) {
   return (
     <Stack gap="xs">
       <Group>
-        {icon}
+        <ThemeIcon>{icon}</ThemeIcon>
         {linkUrl ? (
           <Anchor target="_blank" href={linkUrl}>
             {text}
