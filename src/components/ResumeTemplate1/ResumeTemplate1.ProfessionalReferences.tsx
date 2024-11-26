@@ -18,7 +18,7 @@ export function RT1ProfessionalReferences(
   return (
     <Grid>
       {data.map((record) => (
-        <Grid.Col span={spanConfig}>
+        <Grid.Col span={spanConfig} key={record.name}>
           <RT1ProfessionalReference data={record} />
         </Grid.Col>
       ))}

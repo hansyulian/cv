@@ -65,7 +65,7 @@ export function RT1Education(props: RT1EducationProps) {
               </List.Item>
               {description &&
                 description.map((d) => (
-                  <List.Item>
+                  <List.Item key={d}>
                     <Text>{d}</Text>
                   </List.Item>
                 ))}

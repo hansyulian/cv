@@ -13,7 +13,7 @@ export function RT1NotableAccomplishments(
   return (
     <List>
       {data.map((extra) => (
-        <List.Item>
+        <List.Item key={extra}>
           <AutoLinkText>{extra}</AutoLinkText>
         </List.Item>
       ))}

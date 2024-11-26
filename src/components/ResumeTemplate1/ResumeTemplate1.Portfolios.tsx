@@ -16,7 +16,7 @@ export function RT1Portfolios(props: RT1PortfoliosProps) {
   return (
     <Grid>
       {data.map((record) => (
-        <Grid.Col span={spanConfig}>
+        <Grid.Col span={spanConfig} key={record.title}>
           <RT1Portfolio data={record} />
         </Grid.Col>
       ))}
