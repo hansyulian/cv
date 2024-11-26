@@ -16,7 +16,7 @@ export function RT1Educations(props: RT1EducationsProps) {
   return (
     <Stack gap="xl">
       {educations.map((education, index) => (
-        <RT1Education data={education} index={index} />
+        <RT1Education key={education.degree} data={education} index={index} />
       ))}
     </Stack>
   );

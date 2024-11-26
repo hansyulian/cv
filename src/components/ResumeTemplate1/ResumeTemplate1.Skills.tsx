@@ -88,42 +88,50 @@ export function RT1Skills(props: RT1SkillsProps) {
               <Table.Th></Table.Th>
               <Table.Th></Table.Th>
               {years.map((year) => (
-                <Table.Th>
+                <Table.Th key={year.value}>
                   <Text>{year.label}</Text>
                 </Table.Th>
               ))}
             </Table.Tr>
           </Table.Thead>
-          {displaySkills.map((skill) => (
-            <Table.Tr>
-              <Table.Td w="20%">
-                <Group>
-                  <DevIcon value={skill.name} />
-                  <Text fw="bold">{skill.name}</Text>
-                </Group>
-              </Table.Td>
-              <Table.Td>
-                <Group>
-                  <Tooltip label={`${skill.level}/10`}>
-                    <Rating readOnly count={10} value={skill.level} />
-                  </Tooltip>
-                  {/* <Text>
+          <Table.Tbody>
+            {displaySkills.map((skill) => (
+              <Table.Tr key={skill.name}>
+                <Table.Td w="20%">
+                  <Group>
+                    <DevIcon value={skill.name} />
+                    <Text fw="bold">{skill.name}</Text>
+                  </Group>
+                </Table.Td>
+                <Table.Td>
+                  <Group>
+                    <Tooltip label={`${skill.level}/10`}>
+                      <Rating readOnly count={10} value={skill.level} />
+                    </Tooltip>
+                    {/* <Text>
                   {skill.periods
                     ?.map((period) =>
                       getSimpleDateDurationLabel(period.start, period.end)
                     )
                     .join(", ")}
                 </Text> */}
-                </Group>
-              </Table.Td>
-              {years.map((year) => {
-                const isActive = isSkillActive(year.value, skill.periods || []);
-                return (
-                  <Table.Td bg={isActive ? year.color : undefined}></Table.Td>
-                );
-              })}
-            </Table.Tr>
-          ))}
+                  </Group>
+                </Table.Td>
+                {years.map((year) => {
+                  const isActive = isSkillActive(
+                    year.value,
+                    skill.periods || []
+                  );
+                  return (
+                    <Table.Td
+                      key={`${skill.name}-${year.label}`}
+                      bg={isActive ? year.color : undefined}
+                    ></Table.Td>
+                  );
+                })}
+              </Table.Tr>
+            ))}
+          </Table.Tbody>
         </Table>
       </Table.ScrollContainer>
     </Stack>

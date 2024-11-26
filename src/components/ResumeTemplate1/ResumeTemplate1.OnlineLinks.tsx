@@ -15,7 +15,7 @@ export function RT1OnlineLinks(props: RT1OnlineLinksProps) {
   return (
     <Grid>
       {data.map((record) => (
-        <Grid.Col span={spanConfig}>
+        <Grid.Col span={spanConfig} key={record.url}>
           <RT1OnlineLink data={record} />
         </Grid.Col>
       ))}

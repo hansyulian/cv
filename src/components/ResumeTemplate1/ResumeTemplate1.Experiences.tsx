@@ -16,7 +16,11 @@ export function RT1Experiences(props: RT1ExperiencesProps) {
   return (
     <Stack gap="xl">
       {experiences.map((experience, index) => (
-        <RT1Experience data={experience} index={index} />
+        <RT1Experience
+          key={`${experience.company}-${experience.title}`}
+          data={experience}
+          index={index}
+        />
       ))}
     </Stack>
   );

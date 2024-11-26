@@ -72,7 +72,7 @@ export function RT1Experience(props: RT1ExperienceProps) {
             {description && description.length > 0 && (
               <List withPadding>
                 {description.map((d) => (
-                  <List.Item>
+                  <List.Item key={d}>
                     <Text>{d}</Text>
                   </List.Item>
                 ))}
@@ -92,7 +92,7 @@ export function RT1Experience(props: RT1ExperienceProps) {
                   const hasSingleUrl = d.urls?.length === 1;
                   const hasMultiUrl = (d.urls?.length || 0) > 1;
                   return (
-                    <List.Item>
+                    <List.Item key={d.name}>
                       <Stack gap={0}>
                         <Text>
                           {d.name}
@@ -111,7 +111,7 @@ export function RT1Experience(props: RT1ExperienceProps) {
                         {hasMultiUrl ? (
                           <List>
                             {d.urls?.map((url) => (
-                              <List.Item>
+                              <List.Item key={url}>
                                 <Anchor target="_blank" href={url}>
                                   {url}
                                 </Anchor>

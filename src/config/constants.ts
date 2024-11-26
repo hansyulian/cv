@@ -21,5 +21,4 @@ export const proficiencySequence: LanguageProficiency[] = [
   "native",
 ];
 
-export const dataGistUrl =
-  "https://gist.githubusercontent.com/hansyulian/49e3ba4ac83a11022613905c95d83d4b/raw/0defb68914c9168e00d4ffdd4c401f45a0a0a321/hans-resume.json";
+export const dataUrl = import.meta.env.VITE_DATA_URL || "local";

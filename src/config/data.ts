@@ -12,6 +12,56 @@ export const data: Resume = {
   },
   experiences: [
     {
+      title: "Freelance Engineer",
+      company: "GenTech Sdn. Bhd.",
+      location: "Malaysia",
+      remote: true,
+      start: {
+        year: 2024,
+        month: 10,
+      },
+      projects: [
+        {
+          name: "AccPro Part Timer Management System",
+        },
+      ],
+      description: [
+        "Developed a high-fidelity Part Timer management system",
+        "Implemented web app features using Vue for the front-end.",
+        "Utilized Express and Typescript for back-end API server",
+        "Use MongoDB for database system",
+      ],
+      technologies: ["Vue", "TypeScript", "Node.JS", "Express.JS", "MongoDB"],
+    },
+    {
+      title: "Freelance Engineer",
+      company: "CV. Suka Sandang",
+      location: "Indonesia",
+      remote: true,
+      start: {
+        year: 2024,
+        month: 7,
+      },
+      projects: [
+        {
+          name: "Suka Sandang ERP System",
+        },
+      ],
+      description: [
+        "Developed a high-fidelity ERP system for CV. Suka Sandang",
+        "Implemented web app features using React and TypeScript for the front-end.",
+        "Utilized Express and Typescript for back-end API server",
+        "Use PostgreSQL for database system",
+      ],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.JS",
+        "Express.JS",
+        "PostgreSQL",
+      ],
+    },
+    {
       title: "Freelance Architect",
       company: "FXI Solutions Sdn. Bhd.",
       location: "Malaysia",
@@ -249,7 +299,6 @@ export const data: Resume = {
       technologies: ["Laravel", "CKAN", "PHP", "CSS", "JavaScript", "HTML"],
     },
   ],
-
   skills: [
     {
       name: "Typescript",
@@ -280,6 +329,25 @@ export const data: Resume = {
         {
           start: {
             year: 2019,
+          },
+        },
+      ],
+    },
+    {
+      name: "Vue",
+      level: 7,
+      periods: [
+        {
+          start: {
+            year: 2018,
+          },
+          end: {
+            year: 2019,
+          },
+        },
+        {
+          start: {
+            year: 2024,
           },
         },
       ],
@@ -395,12 +463,24 @@ export const data: Resume = {
     {
       name: "Git",
       level: 8,
-      periods: [{ start: { year: 2015 } }],
+      periods: [
+        {
+          start: {
+            year: 2015,
+          },
+        },
+      ],
     },
     {
       name: "GraphQL",
       level: 5,
-      periods: [{ start: { year: 2017 } }],
+      periods: [
+        {
+          start: {
+            year: 2017,
+          },
+        },
+      ],
     },
     {
       name: "PostgreSQL",
@@ -416,12 +496,24 @@ export const data: Resume = {
     {
       name: "Docker",
       level: 7,
-      periods: [{ start: { year: 2017 } }],
+      periods: [
+        {
+          start: {
+            year: 2017,
+          },
+        },
+      ],
     },
     {
       name: "uBuntu Server",
       level: 8,
-      periods: [{ start: { year: 2017 } }],
+      periods: [
+        {
+          start: {
+            year: 2017,
+          },
+        },
+      ],
     },
     {
       name: "MySQL",
@@ -444,6 +536,11 @@ export const data: Resume = {
           },
           end: {
             year: 2018,
+          },
+        },
+        {
+          start: {
+            year: 2024,
           },
         },
       ],

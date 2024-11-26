@@ -10,22 +10,26 @@ export function RT1Languages(props: RT1LanguagesProps) {
   return (
     <Stack>
       <Table>
-        {data.map((language) => (
-          <Table.Tr>
-            <Table.Td w="20%">
-              <Text fw="bold">{language.language}</Text>
-            </Table.Td>
-            <Table.Td>
-              <Group>
-                <Rating
-                  readOnly
-                  value={proficiencySequence.indexOf(language.proficiency) + 1}
-                />
-                <Text>{proficiencyLabelMap[language.proficiency]}</Text>
-              </Group>
-            </Table.Td>
-          </Table.Tr>
-        ))}
+        <Table.Tbody>
+          {data.map((language) => (
+            <Table.Tr key={language.language}>
+              <Table.Td w="20%">
+                <Text fw="bold">{language.language}</Text>
+              </Table.Td>
+              <Table.Td>
+                <Group>
+                  <Rating
+                    readOnly
+                    value={
+                      proficiencySequence.indexOf(language.proficiency) + 1
+                    }
+                  />
+                  <Text>{proficiencyLabelMap[language.proficiency]}</Text>
+                </Group>
+              </Table.Td>
+            </Table.Tr>
+          ))}
+        </Table.Tbody>
       </Table>
     </Stack>
   );

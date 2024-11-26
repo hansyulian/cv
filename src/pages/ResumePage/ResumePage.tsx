@@ -2,16 +2,20 @@ import photo from "~/assets/photo.jpg";
 import { ResumeTemplate1 } from "~/components/ResumeTemplate1";
 import { PrintPaperContainer } from "~/components/PrintPaperContainer";
 import { useEffect, useState } from "react";
-import { dataGistUrl } from "~/config/constants";
+import { dataUrl } from "~/config/constants";
+import { data } from "~/config/data";
 
 export default function ResumePage() {
   const [resume, setResume] = useState<Resume>();
 
   useEffect(() => {
     async function reloadResumeData() {
-      const response = await fetch(dataGistUrl);
-      const data = await response.json();
-      setResume(data);
+      let result = data;
+      if (dataUrl !== "local") {
+        const response = await fetch(dataUrl);
+        result = await response.json();
+      }
+      setResume(result);
     }
     reloadResumeData();
   }, []);
