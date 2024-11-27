@@ -139,12 +139,17 @@ export function RT1Skills(props: RT1SkillsProps) {
 }
 
 function isSkillActive(year: number, periods: SimpleDuration[]) {
+  let result = false;
   for (const period of periods) {
     if (period.start) {
       if (period.end) {
-        return period.start.year <= year && period.end.year >= year;
+        result = period.start.year <= year && period.end.year >= year;
+      } else {
+        result = period.start.year <= year;
       }
-      return period.start.year <= year;
+    }
+    if (result) {
+      return true;
     }
   }
   return false;

@@ -23,6 +23,7 @@ import {
   SassOriginal,
   TypescriptOriginal,
   UbuntuOriginal,
+  VuejsOriginal,
 } from "devicons-react";
 import { FC } from "react";
 
@@ -53,6 +54,7 @@ const devIconMap: Record<string, FC> = {
   elasticsearch: ElasticsearchOriginal,
   "c++": CplusplusOriginal,
   neo4j: Neo4jOriginal,
+  vue: VuejsOriginal,
 };
 
 export type DevIconProps = {
